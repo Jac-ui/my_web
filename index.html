@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jackson Chisanga_My Web</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #F8F8F8; /* Light background */
+      color: #333;
+    }
+
+    .header {
+      background-color: #2F4F4F; /* Dark Green */
+      color: #FFF;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo-placeholder {
+      width: 150px;
+      height: 50px;
+      background-color: #708090; /* Brownish-Grey */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      color: #FFF;
+      border-radius: 5px;
+    }
+
+    .nav a {
+      color: #FFF;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .nav a:hover {
+      color: #87CEEB; /* Light Blue */
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1500x500/A2CCB6/FFFFFF?text=Your+Professional+Photo') no-repeat center center/cover; /* Greenish overlay with placeholder image */
+      color: #FFF;
+      padding: 150px 20px;
+      text-align: center;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    .hero h1 {
+      font-size: 3.5em;
+      margin-bottom: 15px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero p {
+      font-size: 1.5em;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    }
+
+    .section {
+      padding: 80px 5%;
+      text-align: center;
+      animation: slideInUp 1s ease-out;
+    }
+
+    .section:nth-of-type(even) {
+      background-color: #E0FFFF; /* Light Cyan (Blueish) */
+    }
+
+    .section h2 {
+      font-size: 2.5em;
+      margin-bottom: 40px;
+      color: #2F4F4F; /* Dark Green */
+    }
+
+    .section p, .section ul {
+      font-size: 1.1em;
+      line-height: 1.8;
+      max-width: 900px;
+      margin: 0 auto 20px auto;
+      text-align: left;
+    }
+
+    .section ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      text-align: left;
+    }
+
+    .section ul li {
+      background-color: #FFF;
+      padding: 20px;
+      border-left: 5px solid #8B4513; /* Saddle Brown */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #4682B4; /* Steel Blue */
+      color: #FFF;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 30px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #5F9EA0; /* Cadet Blue */
+      transform: translateY(-3px);
+    }
+
+    .footer {
+      background-color: #36454F; /* Charcoal Grey (Brownish tone) */
+      color: #FFF;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9em;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideInUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo-placeholder">JC</div>
+    <nav class="nav">
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <div class="hero">
+    <h1>Hello, I'm Jackson Chisanga</h1>
+    <p>A Software Enginearing Student</p>
+    <a href="#contact" class="button">Get in Touch</a>
+  </div>
+
+  <div id="about" class="section about">
+    <h2>About Me</h2>
+    <p>i am an Enthusiastic and adaptable professional with a strong
+    passion for learning and growth. As a quick learner, I easily pick up new skills
+    and technologies, and I enjoy building meaningful connections through strong
+    communication and rapport. I thrive in collaborative environments and bring
+    a positive, team-oriented mindset to every project I work</p>
+  </div>
+
+  <div id="projects" class="section projects">
+    <h2>My Projects</h2>
+    <p>I have got no major projects in the field of technology thats i was able to contribute on but i have been able to contribute to other projects in diffirent fields </p>
+    <ul>
+      <li>
+        <h3>POLICY ENGAGEMENT PROJECT</h3>
+        <p>This project was about enganging youths in the affairs of the country and hear there views on the matter and the method used was and interactive dialogue </p>
+      </li>
+      <li>
+        <h3>Mutume delivery Service web dev</h3>
+        <p>this project focuses on the delivery and erand running website which i used figma to design the ui for the website</p>
+      </li>
+     
+    </div>
+
+  <div id="skills" class="section skills">
+    <h2>Skills & Expertise</h2>
+    <p>This section will introduce you to some of the skill that i have acquired in order for me to contribute a little to these projects  </p><ul>
+      <li>
+        <h3>Public Speaking</h3>
+      </li>
+      <li>
+        <h3> Design</h3>
+        <p>UI/UX Design</p>
+      </li>
+    
+    </ul>
+  </div>
+
+  <div id="contact" class="section contact">
+    <h2>Contact Me</h2>
+    <p>I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+    <p>Email: <a href="Chisangajacksonf@gmail.com">ChisangaJacksonf@gmail.com</a></p>
+    </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Jackson Chisanga. All rights reserved.</p>
+  </div>
+</body>
+</html>
